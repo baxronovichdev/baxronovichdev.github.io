@@ -1,19 +1,116 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doston Davronov</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doston Davronov</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#050505,#0a1635,#000);
+background-size:400% 400%;
+animation:bg 8s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:360px;
+padding:35px;
+border-radius:25px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+box-shadow:0 0 30px rgba(0,170,255,.4);
+text-align:center;
+}
+
+.avatar{
+width:120px;
+height:120px;
+margin:auto;
+border-radius:50%;
+background:#111;
+border:4px solid #00aaff;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:60px;
+box-shadow:0 0 25px #00aaff;
+}
+
+h1{
+margin-top:20px;
+font-size:30px;
+}
+
+p{
+margin:10px 0 30px;
+color:#bfbfbf;
+}.btn{
+display:block;
+width:100%;
+padding:16px;
+margin:15px 0;
+border-radius:15px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+color:white;
+background:#008cff;
+box-shadow:0 0 20px rgba(0,140,255,.6);
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #00aaff;
+}
+
+.footer{
+margin-top:25px;
+font-size:13px;
+color:#888;
+}
+</style>
 </head>
-<body style="font-family: Arial; text-align:center; margin-top:50px;">
+
+<body>
+
+<div class="card">
+
+<div class="avatar">👨‍💻</div>
 
 <h1>Doston Davronov</h1>
 
-<p><a href="https://t.me/dastannjan" target="_blank">📱 Telegram</a></p>
+<p>Backend Developer</p>
 
-<p><a href="https://instagram.com/_d.d.baxronovich" target="_blank">📷 Instagram</a></p>
+<a class="btn" href="https://t.me/dastannjan" target="_blank">📱 Telegram</a>
 
-<p><a href="https://github.com/baxronovichdev" target="_blank">💻 GitHub</a></p>
+<a class="btn" href="https://instagram.com/_d.d.baxronovich" target="_blank">📷 Instagram</a>
+
+<a class="btn" href="https://github.com/baxronovichdev" target="_blank">💻 GitHub</a>
+
+<div class="footer">
+© 2026 Doston Davronov
+</div>
+
+</div>
 
 </body>
 </html>
