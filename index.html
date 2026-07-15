@@ -11,15 +11,21 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
-}
+}@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 
 body{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#0f172a,#1e293b,#000);
+
+  background:linear-gradient(135deg,#0f172a,#1e293b,#000);
 color:white;
+  background-size: 300% 300%;
+animation: bg 8s ease infinite;
 }
 
 .card{
